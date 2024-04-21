@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>21055191_Nguyễn Văn Linh</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="menu">
+<ul>
+  <div class="item">
+<div class="dropdown">
+  <button class="dropbtn">Trang chủ</button>
+  <div class="dropdown-content">
+    <a href="#">Giới thiệu</a>
+    <a href="#">Liên hệ</a>
+    <a href="#">Chăm sóc khách hàng</a>
+  </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">Thức ăn</button>
+    <div class="dropdown-content">
+      <a href="#">Thức ăn cho chó</a>
+      <a href="#">Thức ăn cho mèo</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Vật dụng</button>
+    <div class="dropdown-content">
+      <a href="#">Máy hút lông</a>
+      <a href="#">Đồ đựng thức ăn</a>
+      <a href="#">Thùng chứa phân</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Đồ chơi</button>
+    <div class="dropdown-content">
+      <a href="#">Đồ chơi cho chó</a>
+      <a href="#">Đồ chơi cho mèo</a>
+      <a href="#">Phụ kiện khác</a>
+    </div>
+  </div>
+</div>
+</ul>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+<style>/* Style the dropdown button */
+    .dropbtn {
+      background-color: #1bb0a9;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    /* Dropdown button on hover & focus */
+    .dropbtn:hover, .dropbtn:focus {
+      background-color: #293787;
+    }
+    
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #f1f1f1;}
+    
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {display: block;}
+    
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {background-color: #2980B9;}
+
+    #menu {
+    list-style:none;
+    display: flex;
+}
+
+#menu .item {
+    margin: 0px 15px;
+}
+
+#menu .item a {
+    color:#54499c;
+    text-decoration: none;
+}
+#menu .item:hover {
+    background-color: #bfc1d8; /* Màu nền khi di chuột vào */
+	padding: 10px 10px;
+	border-radius: 5px;
+	transition: padding 0.3s ease, background-color 0.3s ease; /* Hiệu ứng chuyển đổi kích thước và màu nền */
+}
+    </style>
